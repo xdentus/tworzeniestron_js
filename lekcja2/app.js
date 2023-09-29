@@ -3,7 +3,7 @@ document.querySelector("header").style.backgroundColor = "yellow"
 
 //zadanie 2
 var text = document.querySelector("header h1")
-text.innerHTML = "Preambuła"
+text.innerHTML = "tekst"
 text.style.fontFamily = "Arial Black"
 
 //zadanie 3
