@@ -35,14 +35,12 @@ cols[1].remove()
 
 //zadanie 8
 let header = document.querySelector("header")
-//header.innerHTML += "<p><i>Pochylony tekst</i></p>"
-//header.innerText += "<i>Pochylony tekst</i>"
 const headerParagraph = document.createElement("p")
 header.appendChild(headerParagraph)
 header.appendChild(headerParagraph.cloneNode(true))
 
 let cos = document.querySelectorAll("header p")
-cos[0].innerHTML = "<p><i>Pochylony tekst</i></p>"
+cos[0].innerHTML = "<i>Pochylony tekst</i>"
 cos[1].innerText = "<i>Pochylony tekst</i>"
 
 //zadanie 9
