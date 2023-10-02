@@ -42,17 +42,17 @@ document.querySelector("#zad7").addEventListener("click", function() {
 //zadanie 8
 document.querySelector("#zad8").addEventListener("click", function(){
     let headerData = document.querySelector("#zadanie8 h3")
-    // console.log(headerData.attributes)
-    // console.log(headerData.dataset)
+    console.log(headerData.attributes)
+    console.log(headerData.dataset)
     for (let i = 0; i <= headerData.attributes.length; i++) {
         document.querySelector("#dataset-attributes-container").innerHTML +=
             "<p>Atrybut: <b>"+ headerData.attributes[i] +"</b> ma wartość: "+ headerData.dataset[i] + "</p>"
     }
-    for(const atr in headerData.attributes )
-    {
-        console.log(atr.nodeName);
-        console.log(atr.nodeValue);
-    }
+    // for(const atr in headerData.attributes )
+    // {
+    //     console.log(atr.nodeName);
+    //     console.log(atr.nodeValue);
+    // }
 })
 
 //zadanie 9
