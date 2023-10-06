@@ -14,7 +14,6 @@ body {
 
 .zadanie {
   width: 80vw;
-  fieldset {
-    padding: 15px;
-  }
+  padding: 15px;
+  border: 1px solid black;
 }
