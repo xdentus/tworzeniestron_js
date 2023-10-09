@@ -17,3 +17,7 @@ body {
   padding: 15px;
   border: 1px solid black;
 }
+
+#shadowText {
+  color: green;
+}

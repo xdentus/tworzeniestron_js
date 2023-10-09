@@ -48,18 +48,13 @@ document.querySelector("#zad8").addEventListener("click", function(){
         document.querySelector("#dataset-attributes-container").innerHTML +=
             "<p>Atrybut: <b>"+ headerData.attributes[i] +"</b> ma wartość: "+ headerData.dataset[i] + "</p>"
     }
-    // for(const atr in headerData.attributes )
-    // {
-    //     console.log(atr.nodeName);
-    //     console.log(atr.nodeValue);
-    // }
+
 })
 
 //zadanie 9
 document.querySelector("#zad9").addEventListener("click", function(){
-    let randomColor = Math.floor(Math.random()*16777215).toString(16).toUpperCase();
-    let bgColor =  "#" + randomColor
-    document.querySelector("#zadanie9 textarea").innerText = bgColor
-    document.querySelector("#zadanie9 textarea").style.backgroundColor = bgColor
+    let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16).toUpperCase();
+    document.querySelector("#zadanie9 textarea").innerText = randomColor
+    document.querySelector("#zadanie9 textarea").style.backgroundColor = randomColor
 })
 

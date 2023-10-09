@@ -39,7 +39,7 @@
             <option value="blue">blue</option>
             <option value="blueviolet">blueviolet</option>
             <option value="burlywood">burlywood</option>
-            <option value="biqsue">biqsue</option>
+            <option value="bisque">bisque</option>
           </select>
         </p>
       </div>
@@ -55,7 +55,20 @@
     <div class="zadanie">
       <div id="zad5">
         <h1>ZADANIE 5</h1>
-        <img src="" alt="" />
+        <img src="obrazek.jpg" alt="obrazek" id="image" oncontextmenu="showSrc()" />
+      </div>
+    </div>
+    <div class="zadanie">
+      <div id="zad6">
+        <h1>ZADANIE 6</h1>
+        <input type="text" id="copyFrom" onkeyup="copyText()">
+        <p id="copyInto"></p>
+      </div>
+    </div>
+    <div class="zadanie">
+      <div id="zad7">
+        <h1>ZADANIE 7</h1>
+        <h1 id="shadowText" onmouseout="removeShadow()" onmouseover="addShadow()">PRZYKLADOWY TEKST</h1>
       </div>
     </div>
     <script src="app.js"></script>
