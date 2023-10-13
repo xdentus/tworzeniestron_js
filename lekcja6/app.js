@@ -1,9 +1,9 @@
 let button = document.querySelector('#generate')
-let songStorage = document.querySelector('div')
+let songStorage = document.querySelector('#songStorage')
 
 function generateFields() {
+  songStorage.innerHTML = ' '
   let data = document.querySelector("input[type = 'hidden']").dataset
-
   let newInput1 = document.createElement('input')
   newInput1.setAttribute('type', 'text')
   newInput1.setAttribute('value', data.song1)
