@@ -21,4 +21,5 @@ function generateFields() {
   songStorage.appendChild(newInput3)
 
   //   console.log(document.querySelector("input[type = 'hidden']").dataset)
+  console.log(songStorage.tagName)
 }

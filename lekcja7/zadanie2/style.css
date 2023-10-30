@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+table, td {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+
