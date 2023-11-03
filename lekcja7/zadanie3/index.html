@@ -1,25 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-wrapper">
-        <form action="">
-            <label for="width">Szerokość: </label><input type="number" id="width" name="width" value="0" min="0" max="20">
-            <label for="height">Wysokość: </label><input type="number" id="height" name="height" value="0" min="0" max="20">
-            <label for="color">Kolor: </label><input type="color" id="color" name="color" value="#ffffff">
-            <input type="button" value="Narysuj" onclick="draw()">
-        </form>
-        <p id="rectangle"></p>
-        <p>Obwód prostokąta jest równy: <span id="perimeter"></span> cm</p>
-        <p>Pole prostokąta jest równe: <span id="field"></span> cm<sup>2</sup></p>
+      <form action="">
+        <label for="width">Szerokość: </label
+        ><input
+          type="number"
+          id="width"
+          name="width"
+          value="0"
+          min="0"
+          max="20"
+        />
+        <label for="height">Wysokość: </label
+        ><input
+          type="number"
+          id="height"
+          name="height"
+          value="0"
+          min="0"
+          max="20"
+        />
+        <label for="color">Kolor: </label
+        ><input type="color" id="color" name="color" value="#ffffff" />
+        <input type="button" value="Narysuj" onclick="draw()" />
+      </form>
+      <p id="rectangle"></p>
+      <p>Obwód prostokąta jest równy: <span id="perimeter"></span> cm</p>
+      <p>Pole prostokąta jest równe: <span id="field"></span> cm<sup>2</sup></p>
     </div>
-<script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
