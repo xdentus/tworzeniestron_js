@@ -1,24 +1,31 @@
 function generate() {
   let randomNumber = document.querySelector('#randomNumber')
-  let losowa = Math.floor(Math.random() * (30 - 1) + 1)
+  let random = Math.floor(Math.random() * (30 - 1) + 1)
 
-  randomNumber.innerText = losowa
+  randomNumber.innerText = random
 
   let isBiggerThan20 = document.querySelector('#isBiggerThan20')
   let isEven = document.querySelector('#isEven')
   let whichTen = document.querySelector('#whichTen')
 
-  if (losowa >= 20) {
+  if (random >= 20) {
+    isBiggerThan20.style.display = "block"
     isBiggerThan20.innerText = 'Wylosowana liczba jest większa lub równa 20.'
-  } else if (losowa % 2 == 0) {
+  } else {
+    isBiggerThan20.style.display = "none"
+  }
+  if (random % 2 === 0) {
     isEven.innerText = 'Liczba jest parzysta'
-  } else if (losowa % 2 != 0) {
+  } else {
     isEven.innerText = 'Liczba nie jest parzysta'
-  } else if (losowa <= 10 || losowa > 0) {
+  }
+  if (random >= 0 && random <= 10) {
     whichTen.innerText = 'Pierwsza dziesiątka'
-  } else if (losowa <= 20 || losowa > 10) {
+  } else if (random >= 10 && random <= 20) {
     whichTen.innerText = 'Druga dziesiątka'
-  } else if (losowa <= 30 || losowa > 20) {
+  } else if (random >= 20 && random <= 30) {
     whichTen.innerText = 'Trzecia dziesiątka'
+  } else if (random > 30) {
+    whichTen.innerText = 'nie'
   }
 }
