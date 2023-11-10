@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <h1>DZIELENIE Z RESZTĄ</h1>
+      <p>Podaj dwie liczby całkowite</p>
+      <div class="inputs">
+        <input
+          type="number"
+          name="number"
+          id="number"
+          onchange="this.value = Math.round(this.value)"
+        />
+        :
+        <input
+          type="number"
+          name="divider"
+          id="divider"
+          onchange="this.value = Math.round(this.value)"
+        />
+        = <input type="text" name="result" id="result" disabled /> reszta
+        <input type="text" name="residue" id="residue" disabled />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
