@@ -9,10 +9,10 @@ function generate() {
   let whichTen = document.querySelector('#whichTen')
 
   if (random >= 20) {
-    isBiggerThan20.style.display = "block"
+    isBiggerThan20.style.display = 'block'
     isBiggerThan20.innerText = 'Wylosowana liczba jest większa lub równa 20.'
   } else {
-    isBiggerThan20.style.display = "none"
+    isBiggerThan20.style.display = 'none'
   }
   if (random % 2 === 0) {
     isEven.innerText = 'Liczba jest parzysta'
