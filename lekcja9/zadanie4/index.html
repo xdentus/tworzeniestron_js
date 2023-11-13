@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="crate" id="crate1">
+        <h1>Skrzynka #2</h1>
+        <table>
+          <tr>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img
+                src="img/jablko1.jpg"
+                alt="jablko1"
+                id="jablko1"
+                draggable="true"
+                ondragstart="drag(event)"
+              />
+            </td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img
+                src="img/jablko2.jpg"
+                alt="jablko2"
+                id="jablko2"
+                draggable="true"
+                ondragstart="drag(event)"
+              />
+            </td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img
+                src="img/jablko3.jpg"
+                alt="jablko3"
+                id="jablko3"
+                draggable="true"
+                ondragstart="drag(event)"
+              />
+            </td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img
+                src="img/jablko4.jpg"
+                alt="jablko4"
+                id="jablko4"
+                draggable="true"
+                ondragstart="drag(event)"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="crate" id="crate2">
+        <h1>Skrzynka #2</h1>
+        <table>
+          <tr>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
