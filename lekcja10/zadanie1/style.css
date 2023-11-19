@@ -17,3 +17,8 @@ input {
 table {
   width: 100%;
 }
+
+td {
+  padding: 10px;
+  box-shadow: 5px 5px lightblue;
+}
