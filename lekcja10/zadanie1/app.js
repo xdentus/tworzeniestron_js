@@ -22,8 +22,12 @@ for (let i = 1; i <= 20; i++) {
 let cells = document.querySelectorAll('td')
 
 for (let i = 0; i <= 100; i++) {
-  cells[i].innerHTML = 'Element numer ' + (i + 1)
-  cells[i].setAttribute('id', 'cell_' + (i + 1))
+  cells[i].innerHTML =
+    '<input name="cell" id="cell_' +
+    (i + 1) +
+    '" placeholder= "Element numer ' +
+    (i + 1) +
+    '"/>'
   // cells[i].style.padding = '10px'
   // cells[i].style.boxShadow = '5px 5px lightblue'
 }

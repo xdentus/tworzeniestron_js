@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <h1>Miara kąta między wskazówkami zegara</h1>
+      <div class="main-container">
+        Miara kąta między wskazówką minutową a godzinową można obliczyć ze wzoru
+        <img src="./task_689.bmp" alt="matematyka" />
+      </div>
+      <div class="container-container">
+        <div class="container">
+          <label for="hours_range">Godziny [0, 11]</label>
+          <input
+            type="range"
+            name="hours_range"
+            id="hours_range"
+            min="0"
+            max="11"
+            value="0"
+          />
+          <output id="hours_output">0</output>
+        </div>
+        <div class="container">
+          <label for="minutes_range">Minuty [0, 60]</label>
+          <input
+            type="range"
+            name="minutes_range"
+            id="minutes_range"
+            min="0"
+            max="60"
+            value="0"
+          />
+          <output id="minutes_output">0</output>
+        </div>
+      </div>
+      <div id="clock">
+        <div
+          id="clock_hours"
+          class="hand"
+          style="transform: rotate(0deg)"
+        ></div>
+        <div
+          id="clock_minutes"
+          class="hand"
+          style="transform: rotate(0deg)"
+        ></div>
+      </div>
+      <div class="container">
+        <label for="angle">Kąt</label>
+        <br /><br />
+        <output id="angle">0°</output>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
