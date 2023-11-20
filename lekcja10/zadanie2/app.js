@@ -8,15 +8,15 @@ let angle = document.querySelector('#angle')
 
 function updateClock() {
   let hoursValue = document.querySelector('#hours_range').value
-  hoursHand.style.transform = 'rotate(' + hoursValue * 30 + 'deg)'
+  //   hoursHand.style.transform = 'rotate(' + hoursValue * 30 + 'deg)'
   hoursOutput.innerText = hoursValue
   let minutesValue = document.querySelector('#minutes_range').value
   minutesHand.style.transform = 'rotate(' + minutesValue * 6 + 'deg)'
   minutesOutput.innerText = minutesValue
-  angle.innerText = 30 * hoursValue - (11 / 2) * minutesValue
+  hoursHand.style.transform =
+    'rotate(' + (hoursValue * 30 + minutesValue / 2) + 'deg'
+  angle.innerText = Math.abs(30 * hoursValue - (11 / 2) * minutesValue) + '°'
 }
 
 hoursInput.addEventListener('input', updateClock)
 minutesInput.addEventListener('input', updateClock)
-
-// angle = 30 * hoursValue - (11 / 2) * minutesValue
