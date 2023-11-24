@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <p>
+        Znajdź liczby palindromiczne, czyli takie, które przy czytaniu od lewej
+        i odwrotnie są jednakowe.
+      </p>
+      <form>
+        <div class="choices">
+          <div class="choice">
+            <input type="radio" name="number" id="double" />
+            <label for="double">dwucyfrowe</label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="number" id="triple" />
+            <label for="triple">trzycyfowe</label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="number" id="quadruple" />
+            <label for="quadruple">czterocyfrowe</label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="number" id="quintuple" />
+            <label for="quintuple">pięcocyfrowe</label>
+          </div>
+        </div>
+        <button type="button" id="submit">Znajdź</button>
+      </form>
+      <fieldset>
+        <legend>Liczby palindromiczne</legend>
+      </fieldset>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
